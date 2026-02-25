@@ -64,3 +64,7 @@ Route::resource('photos', PhotoController::class);
 
 Route::resource('photos', PhotoController::class)->only(['index', 'show']);
 Route::resource('photos', PhotoController::class)->except(['create', 'store', 'update', 'destroy']);
+
+//Entering View
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
